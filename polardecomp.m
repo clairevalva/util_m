@@ -1,4 +1,4 @@
-function [B, C] = polar(A)
+function [B, C] = polardecomp(A)
     [U,S,V] = svd(A);
     B = U*V';
     C = V*S*V';
